@@ -31,6 +31,11 @@
     <meta property="twitter:description"
         content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
     <meta property="twitter:image" content="https://alexcgdesign.github.io/images/css.jpg">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('KvkkX-Rz4ZwobCs-i')
+    </script>
 </head>
 
 <body>
@@ -62,30 +67,32 @@
                 <img src="./images/menu.svg" class="nav__img">
             </div>
         </nav>
-        <php>
-            <h3 style="margin-top: 3%; margin-left: 5%;">Contacto</h3>
-            <from action="https://formsubmit.co/vesos30745@rockdian.com" method="POST">
-                
-                    <div style="margin-top: 1%; margin-left: 5%;">
-                        <label>Email</label>
-                        <input name="email" type="email" style="width: 15em;" class="form-control" aria-describedby="Email" placeholder="Introduzca el Email" required>
-                    </div>
-                    <div style="margin-top: 1%; margin-left: 5%">
-                        <label>Nombre</label>
-                        <input name="nombre" type="text" style="width: 15em;" class="form-control" aria-describedby="Nombre" placeholder="Introduzca el Nombre" required>
-                    </div>
-                    <div style="margin-top: 1%; margin-left: 5%">
-                        <label>Telefono</label>
-                        <input name="telefono" type="text" style="width: 15em;" class="form-control" aria-describedby="Telefono" placeholder="Introduzca el Telefono" required>
-                    </div>
-                    <div style="margin-top: 1%; margin-left: 5%">
-                        <label>Descripcion del peroyecto</label>
-                        <input name="descripcion" type="text" style="width: 30em;" class="form-control" aria-describedby="Descripcion del peroyecto" placeholder="Descripcion del peroyecto" required>
-                    </div>
-                    <button type="submit" style="margin-top: 1%; margin-left: 5%;" class="btn btn-primary">Enviar</button>
-                    <input type="hidden" name="_next" href="./Contacto.html">
-            </from>
-        </php>
+        <h2 style="margin-top: 3%; margin-left: 5%;">Contacto</h2>
+            <form id="form" style="margin-top: -30em;">
+                <div class="field" style="margin-top: 1%; margin-left: 5%;">
+                  <label for="from_name">Nombre</label>
+                  <input type="text" name="from_name" id="from_name" style="width: 15em;"
+                  class="form-control" aria-describedby="Nombre" placeholder="Introduzca el Nombre" required>
+                </div>
+                <div class="field" style="margin-top: 1%; margin-left: 5%;">
+                  <label for="message">message</label>
+                  <input type="text" name="message" id="message" style="width: 30em;" class="form-control"
+                  aria-describedby="Descripcion del peroyecto" placeholder="Descripcion del peroyecto" required>
+                </div>
+                <div class="field" style="margin-top: 1%; margin-left: 5%;">
+                  <label for="email">email</label>
+                  <input type="text" name="email" id="email" style="width: 15em;" class="form-control" 
+                  aria-describedby="Email" placeholder="Introduzca el Email" required>
+                </div>
+                <div class="field" style="margin-top: 1%; margin-left: 5%;">
+                  <label for="telefono">telefono</label>
+                  <input type="text" name="telefono" id="telefono" style="width: 15em;" class="form-control" 
+                  aria-describedby="Telefono" placeholder="Introduzca el Telefono" required> 
+                </div>
+              
+                <input type="submit" id="button" value="Enviar" style="margin-top: 1%; margin-left: 5%;" class="btn btn-primary">
+              </form>
+
     </header>
 
 
@@ -94,7 +101,7 @@
     </main>
 
 
-        
+    <script src="./js/email.js"></script>
 </body>
 
 </html>
