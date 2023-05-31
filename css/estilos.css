@@ -413,6 +413,7 @@ body {
 }
 
 .questions__padding{
+    height: 10em;
     padding: 0;
     transition: padding .3s;
     border: 1px solid #5454D4;
@@ -420,7 +421,7 @@ body {
 }
 
 .questions__padding--add{
-    padding-bottom: 10px;
+    padding-bottom: 10em;
 }
 
 .questions__answer{
@@ -457,8 +458,6 @@ body {
 
 .questions__show{
     text-align: left;
-    height: 0;
-    transition: height .3s;
 }
 
 .questions__img{

@@ -64,27 +64,26 @@
         </nav>
         <php>
             <h3 style="margin-top: 3%; margin-left: 5%;">Contacto</h3>
-            <from>
+            <from action="https://formsubmit.co/oscar3jaro@gmail.com" method="POST">
+                
                     <div style="margin-top: 1%; margin-left: 5%;">
                         <label>Email</label>
-                        <input style="width: 15em;" class="form-control" aria-describedby="Email" placeholder="Introduzca el Email">
+                        <input name="email" type="email" style="width: 15em;" class="form-control" aria-describedby="Email" placeholder="Introduzca el Email">
                     </div>
                     <div style="margin-top: 1%; margin-left: 5%">
                         <label>Nombre</label>
-                        <input style="width: 15em;" class="form-control" aria-describedby="Nombre" placeholder="Introduzca el Nombre">
+                        <input name="nombre" type="text" style="width: 15em;" class="form-control" aria-describedby="Nombre" placeholder="Introduzca el Nombre">
                     </div>
                     <div style="margin-top: 1%; margin-left: 5%">
                         <label>Telefono</label>
-                        <input style="width: 15em;" class="form-control" aria-describedby="Telefono" placeholder="Introduzca el Telefono">
+                        <input name="telefono" type="text" style="width: 15em;" class="form-control" aria-describedby="Telefono" placeholder="Introduzca el Telefono">
                     </div>
                     <div style="margin-top: 1%; margin-left: 5%">
                         <label>Descripcion del peroyecto</label>
-                        <input style="width: 50em;" class="form-control" aria-describedby="Descripcion del peroyecto" placeholder="Descripcion del peroyecto">
+                        <input name="descripcion" type="text" style="width: 30em;" class="form-control" aria-describedby="Descripcion del peroyecto" placeholder="Descripcion del peroyecto">
                     </div>
-    
-                <button id= 'enviar' style="margin-top: 1%; margin-left: 5%;" type="button" class="btn btn-primary"
-                onclick="alert('Correo enviado')"
-                >Enviar</button>
+
+                    <button type="submit" value="Enviar" name="Enviar" style="margin-top: 1%; margin-left: 5%;" class="btn btn-primary">Enviar</button>
             </from>
         </php>
     </header>
